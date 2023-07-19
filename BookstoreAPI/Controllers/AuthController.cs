@@ -67,7 +67,7 @@ namespace BookStore__Management_system.Controllers
                     }
 
                     var mappedModel = this.mapper.Map<RegisterModel, User>(userModel);
-                    mappedModel.Role = "Administrator";
+                    mappedModel.Role = "User";
                     var user = this.authService.RegisterUser(mappedModel);
 
                     if (user != null)
