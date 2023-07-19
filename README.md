@@ -45,7 +45,7 @@ The Online Book Store API used the following terminologies
 In other to run this project you'll need
 
 - Browser
-- VS Code or any code editor
+- Visual Studio
 
 ## Getting Started
 
@@ -91,7 +91,7 @@ This code would only restore the package but won't build it.
 
 - Modify the `ConnectionStrings:DefaultConnection` value to match your SQL Server connection string.
 
-- Modify the `JwtConfig:Secret` value to use a secure key for JWT token generation. it is recommended to generate a strong random key of sufficient length(e.g, 256bits)
+- Modify the `Jwt:Key` value to use a secure key for JWT token generation. it is recommended to generate a strong random key of sufficient length(e.g, 256bits)
 
 5. Apply database migrations
 
@@ -111,22 +111,22 @@ This code would only restore the package but won't build it.
 
 8. User Authentication
 
-- Register a new user by making a `POST` request to `/authentication/register` with the required `user` details.
-- Obtain a JWT token by making a `POST` request to`/authentication/login` with the user's `login` credentials. The token will be included in the response.
+- Register a new user by making a `POST` request to `/auth/register` with the required `user` details.
+- Obtain a JWT token by making a `POST` request to`/auth/login` with the user's `login` credentials. The token will be included in the response.
 - Include the obtained JWT token in the` Authorization header` for authenticated requests. Example:` Authorization: Bearer <token>`
 
 9. Manage Books
 
 - Use the appropriate endpoints to perform CRUD operations on books, such as creating, updating, deleting, and retrieving books by various criteria.
 - Ensure you have the necessary authorization roles to access specific endpoints.
-- Admin privileges are required for certain operations.
+- Admin privileges are required for certain operations(i.e Add, Update and Delete books).
 
 10. Shopping Cart
 
-- Add books to the shopping cart using the `/book/add-to-cart/{id}` endpoint.
+- Add books to the shopping cart using the `/Cart/add-to-cart/{id}` endpoint.
 
-- View the contents of the shopping cart using the ` /book/view-cart` endpoint.
-- Remove books from the shopping cart using the `/book/delete-from-cart/{id}` endpoint.
+- View the contents of the shopping cart using the ` /Cart/view-cart` endpoint.
+- Remove books from the shopping cart using the `/Cart/delete-from-cart/{id}` endpoint.
 
 11. Error Handling
 
