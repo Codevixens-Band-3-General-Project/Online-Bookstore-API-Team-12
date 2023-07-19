@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookStore__Management_system.Migrations
 {
     [DbContext(typeof(BookStoreContext))]
-    [Migration("20230714115638_initialMigration")]
-    partial class initialMigration
+    [Migration("20230719143521_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -104,28 +104,6 @@ namespace BookStore__Management_system.Migrations
                     b.HasKey("CartId");
 
                     b.ToTable("CartItems");
-                });
-
-            modelBuilder.Entity("BookStore__Management_system.Data.Sales", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("BookId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("SaleDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("TotalPrice")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Sales");
                 });
 
             modelBuilder.Entity("BookStore__Management_system.Data.User", b =>

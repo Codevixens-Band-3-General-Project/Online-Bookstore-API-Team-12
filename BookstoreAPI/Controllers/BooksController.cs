@@ -3,11 +3,7 @@ using BookStore__Management_system.Data;
 using BookStore__Management_system.Models;
 using BookStore__Management_system.Repository;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Data;
 
 namespace BookStore__Management_system.Controllers
 {
@@ -88,7 +84,7 @@ namespace BookStore__Management_system.Controllers
 
         }
         [HttpPost("AddBook")]
-        [Authorize]
+        [Authorize(Roles="Administrator")]
         public async Task<IActionResult> AddNewBook([FromBody] BookModel bookModel)
         {
             try

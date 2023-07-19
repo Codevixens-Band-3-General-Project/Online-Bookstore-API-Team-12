@@ -103,28 +103,6 @@ namespace BookStore__Management_system.Migrations
                     b.ToTable("CartItems");
                 });
 
-            modelBuilder.Entity("BookStore__Management_system.Data.Sales", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("BookId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("SaleDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("TotalPrice")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Sales");
-                });
-
             modelBuilder.Entity("BookStore__Management_system.Data.User", b =>
                 {
                     b.Property<string>("UserId")
