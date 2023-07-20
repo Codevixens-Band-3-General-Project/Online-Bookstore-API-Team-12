@@ -118,7 +118,7 @@ This code would only restore the package but won't build it.
 9. Manage Books
 
 - Use the appropriate endpoints to perform CRUD operations on books, such as creating, updating, deleting, and retrieving books by various criteria.
-- Ensure you have the necessary authorization roles to access specific endpoints.
+- Ensure that you have the required access rights to the required endpoints.
 - Admin privileges are required for certain operations(i.e Add, Update and Delete books).
 
 10. Shopping Cart
