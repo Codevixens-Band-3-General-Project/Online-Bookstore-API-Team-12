@@ -134,7 +134,7 @@ In the event of errors or incorrect requests, the API contains comprehensive err
 
 12. Logging
 
-Logging is implemented to capture relevant information for debugging and troubleshooting purposes. Check the log files for any issues or helpful insights.
+Logging is used to record important information for troubleshooting and debugging. Examine the log files for any problems or insightful information.
 
 ##
 
