@@ -2,21 +2,22 @@
 
 ## Table of Contents
 
-- Introduction
-- Terminologies Used
-- Prerequisites
-- Getting Started
-- Contibutors
-- User Guide
+- [Introduction](#introduction)
+- [Terminologies Used](#terminologies-used)
+- [Prerequisites](#pre-requisites)
+- [Getting Started](#getting-started)
+- [Contibutors](#contributors)
+- [User Guide](#user-guide)
 
 ## Introduction
 
-Welcome to the online book store project. This API provides a comprehensive and user-friendly guide that would aid in navigating your way on the online book store system. It enables users to register, login,view,search for available books and purchase them.Even if you are a user eager to explore the functionalities or a developer intergrating with the API.
+Welcome to the online book store project. This API provides a comprehensive and user-friendly guide that would aid in navigating your way on the online book store system. It enables users to register, login,view,search for available books and purchase them.Even if you are a user eager to explore the functionalities or a developer integrating with the API.
 
 Admins Have Following Access for this online store site:
 
 - Add New Books.
 - View Books Available.
+- Update books
 - Remove Books.
 
 Users Have Following Access for this online store site:
@@ -27,7 +28,6 @@ Users Have Following Access for this online store site:
 - Search for Books.
 - Add a book to cart.
 - Remove a book from cart.
-- Purchase Books.
 
 ## Terminologies Used
 
@@ -37,7 +37,6 @@ The Online Book Store API used the following terminologies
 - ASP.NET Core
 - Entity Framework Core
 - JWT (JSON Web Tokens) for authentication
-- Microsoft Identity for user management
 - Microsoft SQL Server for the database
 
 ## Prerequisite
